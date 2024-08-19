@@ -1,0 +1,52 @@
+body{
+    background: url(images_kk/kanyakumari-1656091428_cf69d9a9dbec82018046.jpg) no-repeat center center fixed;
+}
+
+.container {
+    display: flex; 
+    align-items: flex-start; 
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #edf3f3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+    width: 200px; 
+    height: auto;
+    margin-right: 20px;
+    transition: transform 1s ease;
+}
+
+.container p {
+    margin: 0;
+    flex: 1; 
+}
+
+.container img:hover {
+    transform: scale(1.2); 
+}
+
+.glow {
+    font-size: 20px;
+    font-weight: bold;
+    color: #121313;
+    text-shadow: 
+        0 0 5px #edf3f3,
+        0 0 10px #edf3f3,
+        0 0 15px #edf3f3, 
+        0 0 20px #edf3f3,
+        0 0 25px #edf3f3,
+        0 0 30px #edf3f3,
+        0 0 35px #edf3f3;
+}
+
+.clock {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: #020202;
+    text-shadow: 2px 2px 5px #edf3f3;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+</head>
+<body>
+    <h1>Enter the following details:</h1>
+    <label for="emp_name">Employee Name:</label>
+    <input type="text" id="emp_name" placeholder="Type here"><br><br>
+    <label for="dept">Department:</label>
+    <input type="text" id="dept" placeholder="Type here"><br><br>
+    <label for="basic_sal">Basic Salary:</label>
+    <input type="text" id="basic_sal" placeholder="Enter in Rupees"><br><br>
+    <label for="HRA">HRA:</label>
+    <input type="text" id="HRA" placeholder="Enter in Rupees"><br><br>
+    <label for="DA">DA:</label>
+    <input type="text" id="DA" placeholder="Enter in Rupees"><br><br>
+    <label for="deduct">Deductions:</label>
+    <input type="text" id="deduct" placeholder="Enter in Rupees"><br><br>
+    <label for="TA">TA Details:</label>
+    <input type="text" id="TA" placeholder="Enter in Rupees"><br><br>
+    <button onclick="calculate_salary()">Calculate Salary</button>
+    <h4 id="name"></h4>
+    <h4 id="department"></h4>
+    <h4 id="sal"></h4>
+
+    <script>
+        
+        function calculate_salary(){
+            var Basic_Sal = parseFloat(document.getElementById("basic_sal").value)
+            var Hra = parseFloat(document.getElementById("HRA").value)
+            var Da = parseFloat(document.getElementById("DA").value)
+            var Deductions = parseFloat(document.getElementById("deduct").value)
+            var Ta = parseFloat(document.getElementById("TA").value)
+
+            var Gross_Salary = Basic_Sal + Hra + Da + Ta
+            var Net_Salary = Gross_Salary - Deductions
+            
+            var name = document.getElementById("name")
+            var department = document.getElementById("department")
+            var sal = document.getElementById("sal")
+
+            name.innerHTML = "Employee Name: " + document.getElementById("emp_name").value
+            department.innerHTML = "Department: " + document.getElementById("dept").value
+            sal.innerHTML = "Calculated Salary: " + Net_Salary
+        }
+    </script>
+</body>
+</html>

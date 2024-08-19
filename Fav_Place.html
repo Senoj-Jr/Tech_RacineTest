@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanyakumari</title>
+    <link rel="stylesheet" href="Fav_Place.css">
+</head>
+
+<body>
+    <header>
+        <center><h1>Explore Kanyakumari</h1></center>
+    </header>
+    <div class="clock" id="clock"></div>
+    <main>
+        <div class="glow">
+            <p>Kanyakumari is one of the finest places I have visited in recent times, which is why I am choosing it for this assignment, located at the southernmost tip of India, is a place of great cultural and historical significance. It is the point where the Arabian Sea, the Bay of Bengal, and the Indian Ocean meet, creating a spectacular confluence of waters. Known for its breathtaking sunrise and sunset views, Kanyakumari is a popular destination for travelers seeking natural beauty and spiritual solace. The town is home to iconic landmarks such as the Vivekananda Rock Memorial, dedicated to the revered philosopher Swami Vivekananda, and the Thiruvalluvar Statue, a towering tribute to the famous Tamil poet and philosopher.</p>
+        </div>
+        <div class="container">
+            <img src="images_kk/Beach_kk.jpg" alt="Beach">
+            <p>Kanyakumari Beach, located at the southernmost tip of India, is a unique and mesmerizing destination known for its breathtaking views and serene atmosphere. This beach is where the Arabian Sea, the Bay of Bengal, and the Indian Ocean converge, creating a striking visual contrast in the color of the waters. Kanyakumari Beach is especially famous for its spectacular sunrises and sunsets, drawing visitors from all over the world to witness these natural wonders.Visitors can enjoy a peaceful stroll along the shore, explore the nearby attractions, or simply sit back and soak in the beauty of the surroundings. Whether you're seeking a spiritual experience.</p>
+        </div>
+        <div class="container">
+            <img src="images_kk/Falls.jpg" alt="Thiruparapu Falls">
+            <p>Thiruparappu Falls, located in the Kanyakumari district of Tamil Nadu, is a stunning waterfall that cascades from a height of about 50 feet. Nestled amidst lush greenery, this picturesque spot is a popular destination for nature lovers and tourists alike. The waterfall is part of the Kodayar River, and its continuous flow creates a mesmerizing sight, especially during the monsoon season when the water gushes down with greater force. The temple, located just a short walk from the falls, is known for its traditional architecture and religious significance, attracting both pilgrims and tourists.</p>
+        </div>
+        <div class="container">
+            <img src="images_kk/padmanabhapuram-palace.jpg" alt="palace">
+            <p>Then I visited the famous Padmanabhapuram Palace. I just loved to be there. Once the capital of the princely state of Travancore, the palace was the royal seat of the Travancore rulers until the 18th century, when the capital was moved to Thiruvananthapuram.
+            The palace, built primarily of wood, is renowned for its exquisite craftsmanship, intricate woodwork, and traditional design elements. It is surrounded by a 4 km long stone fortress and nestled at the foot of the Veli Hills, which adds to its majestic charm.The palace also houses an impressive collection of antique furniture, ornate wooden ceilings.</p>
+        </div>
+        <div class="container">
+            <img src="images_kk/Vattakotai.jpg" alt="Fort">
+            <p>Vattakottai Fort, located near Kanyakumari in Tamil Nadu, is a historic coastal fort that offers a fascinating glimpse into the region's past. The name "Vattakottai" translates to "Circular Fort" in Tamil, though the fort itself is rectangular in shape. Built in the 18th century during the reign of the Travancore kingdom, Vattakottai Fort was constructed under the supervision of Captain Eustachius De Lannoy, a Dutch naval officer who served in the Travancore army.From the ramparts, visitors can enjoy a stunning view of the endless ocean and the lush green landscape that surrounds the area.The fort also has a secret tunnel that is said to connect it to the Padmanabhapuram Palace.</p>
+        </div>
+        <div class="container">
+            <img src="images_kk/hotel-seaview.jpg" alt="Hotel">
+            <p>There are various seaside restaurants and hotels available near the tourist spots. I enjoyed staying at a hotel called Hotel Sea View. It was a nice experience. There are also other hotels available around the sea area. The cost for the stay is not very economical, but the experience and the quality of food are nice there.Hostels in Kanyakumari are known for their friendly atmosphere, where travelers can easily meet and interact with others from different parts of the world. Some hostels even offer organized activities like group tours, beach outings, and cultural events, allowing guests to fully immerse themselves in the local experience.While the facilities might be more modest compared to hotels, the hostels often make up for it with their vibrant community and helpful staff.</p>
+        </div>
+        <div class="container">
+            <img src="images_kk/Food_1.jpeg" alt="Food">
+            <p>Kanyakumari offers a rich culinary experience that reflects the diverse flavors of South Indian cuisine. The town's seaside location means that fresh seafood is a highlight, with local eateries serving up an array of dishes featuring fish, prawns, and crabs, often spiced with regional spices and herbs. The coastal influence is evident in dishes like meen curry (fish curry) and prawn masala, which are beloved by both locals and visitors.Meals typically feature staples such as idli (steamed rice cakes), dosa (thin, crispy crepes), and sambar (a spicy lentil stew), often enjoyed with coconut chutney and a variety of pickles.</p>
+        </div>
+    </main>
+    <script>
+        function updateClock() {
+        const now = new Date();
+        let hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+        
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        
+        const currentTime = `${hours}:${minutes}:${seconds} ${ampm}`;
+        document.getElementById('clock').textContent = currentTime;
+    }
+    
+    setInterval(updateClock, 1000);
+    updateClock(); 
+    </script>
+    
+</body>
+
+</html>
