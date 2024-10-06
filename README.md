@@ -1,4 +1,4 @@
-# Tech_RacineTest
+# Tech_Racine_Test
 
 Salary.html - The salary calculator application using JavaScript
 Fav_Place.html and Fav_Place.css - A simple single webpage consist of details about my favourite place
